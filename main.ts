@@ -1,4 +1,5 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
+    drehung_aktiv = 1
     startwinkel = input.compassHeading()
     basic.showNumber(startwinkel)
     calliBot2E.motor(C2eMotor.links, C2eDir.vorwärts, 100)
